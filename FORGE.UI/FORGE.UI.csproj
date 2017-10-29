@@ -24,6 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -94,11 +95,43 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="apps\components\auth-component.js" />
+    <Content Include="apps\components\content-management-component.js" />
+    <Content Include="apps\components\heirarchy-component.js" />
+    <Content Include="apps\components\left-menu-component.js" />
+    <Content Include="apps\components\promotion-component.js" />
+    <Content Include="apps\components\sign-in-component.js" />
+    <Content Include="apps\components\top-right-menu-component.js" />
+    <Content Include="apps\config\app-const.js" />
+    <Content Include="apps\config\app-route.js" />
+    <Content Include="apps\config\app-service-modal.js" />
+    <Content Include="apps\config\app-service.js" />
+    <Content Include="apps\config\factory-service-authentication.js" />
+    <Content Include="apps\forge-app.js" />
+    <Content Include="apps\views\auth-component.html" />
+    <Content Include="apps\views\content-management-component.html" />
+    <Content Include="apps\views\heirarchy-component.html" />
+    <Content Include="apps\views\iam-404p.html" />
+    <Content Include="apps\views\left-menu-component.html" />
+    <Content Include="apps\views\promotion-component.html" />
+    <Content Include="apps\views\sign-in-component.html" />
+    <Content Include="apps\views\top-right-menu-component.html" />
+    <Content Include="apps\views\_dashboard.html" />
+    <Content Include="apps\views\_nav-bar-top.html" />
+    <Content Include="imgs\dragon.png" />
+    <Content Include="imgs\fish.png" />
+    <Content Include="imgs\monkey.png" />
+    <Content Include="imgs\notfound.PNG" />
+    <Content Include="imgs\sample-img.PNG" />
+    <Content Include="imgs\Torchic.png" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="scripts\jquery-2.1.1.min.map" />
+    <Content Include="apps\data\sample-data.json" />
+    <Content Include="apps\data\contentGroup.json" />
+    <Content Include="apps\data\application-id.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -923,6 +956,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
